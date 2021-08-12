@@ -2,24 +2,28 @@ from tkinter import *
 
 win = Tk()
 win.title("Calculator")
-p1=PhotoImage(file="calc.png")
+p1 = PhotoImage(file="calc.png")
 win.iconphoto(False, p1)
+
 
 def btn_click(item):
     global expression
     expression = expression + str(item)
     input_text.set(expression)
 
+
 def bt_clear():
     global expression
     expression = ""
     input_text.set("")
 
+
 def bt_equal():
     global expression
-    result = str(eval(expression))  #This function is used to evaluates the string expression directly
+    result = str(eval(expression))  # This function is used to evaluates the string expression directly
     input_text.set(result)
     expression = ""
+
 
 expression = ""
 
@@ -30,13 +34,13 @@ input_frame = Frame(win, width=300, height=50, bd=0, highlightbackground="lightc
                     highlightthickness=2)
 input_frame.pack(side=TOP)
 
-#SCREEN
+# SCREEN
 input_field = Entry(input_frame, font=('arial', 18, 'bold'), textvariable=input_text, width=25, bg="lightblue", bd=0,
                     justify=RIGHT)
 input_field.grid(row=0, column=0)
 input_field.pack(ipady=10)
 
-#FOR BUTTONS
+# FOR BUTTONS
 btns_frame = Frame(win, width=312, height=272.5, bg="grey")
 btns_frame.pack()
 
@@ -83,7 +87,5 @@ point = Button(btns_frame, text=".", fg="black", width=10, height=3, bd=0, bg="l
                command=lambda: btn_click(".")).grid(row=4, column=0, padx=1, pady=1)
 equals = Button(btns_frame, text="=", fg="black", width=21, height=3, bd=0, bg="cyan",
                 command=lambda: bt_equal()).grid(row=4, column=2, columnspan=2, padx=1, pady=1)
-
-
 
 win.mainloop()
