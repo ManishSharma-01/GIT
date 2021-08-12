@@ -61,27 +61,27 @@ multiply = Button(btns_frame, text="X", fg="black", width=10, height=3, bd=0, bg
                   command=lambda: btn_click("*")).grid(row=1, column=3, padx=1, pady=1)
 
 # third row
-four = Button(btns_frame, text="4", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+four = Button(btns_frame, text="4", fg="black", width=10, height=3, bd=0, bg="lightcyan",
               command=lambda: btn_click(4)).grid(row=2, column=0, padx=1, pady=1)
-five = Button(btns_frame, text="5", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+five = Button(btns_frame, text="5", fg="black", width=10, height=3, bd=0, bg="lightcyan",
               command=lambda: btn_click(5)).grid(row=2, column=1, padx=1, pady=1)
-six = Button(btns_frame, text="6", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+six = Button(btns_frame, text="6", fg="black", width=10, height=3, bd=0, bg="lightcyan",
              command=lambda: btn_click(6)).grid(row=2, column=2, padx=1, pady=1)
 minus = Button(btns_frame, text="−", fg="black", width=10, height=3, bd=0, bg="cyan",
                command=lambda: btn_click("-")).grid(row=2, column=3, padx=1, pady=1)
 
 # fourth row
-one = Button(btns_frame, text="1", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+one = Button(btns_frame, text="1", fg="black", width=10, height=3, bd=0, bg="lightcyan",
              command=lambda: btn_click(1)).grid(row=3, column=0, padx=1, pady=1)
-two = Button(btns_frame, text="2", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+two = Button(btns_frame, text="2", fg="black", width=10, height=3, bd=0, bg="lightcyan",
              command=lambda: btn_click(2)).grid(row=3, column=1, padx=1, pady=1)
-three = Button(btns_frame, text="3", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+three = Button(btns_frame, text="3", fg="black", width=10, height=3, bd=0, bg="lightcyan",
                command=lambda: btn_click(3)).grid(row=3, column=2, padx=1, pady=1)
 plus = Button(btns_frame, text="+", fg="black", width=10, height=3, bd=0, bg="cyan",
               command=lambda: btn_click("+")).grid(row=3, column=3, padx=1, pady=1)
 
 # fourth row
-zero = Button(btns_frame, text="0", fg="black", width=10, height=3, bd=0, bg="lightcyan", cursor="hand2",
+zero = Button(btns_frame, text="0", fg="black", width=10, height=3, bd=0, bg="lightcyan",
               command=lambda: btn_click(0)).grid(row=4, column=1, padx=1, pady=1)
 point = Button(btns_frame, text=".", fg="black", width=10, height=3, bd=0, bg="lightcyan",
                command=lambda: btn_click(".")).grid(row=4, column=0, padx=1, pady=1)
