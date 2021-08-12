@@ -20,7 +20,7 @@ def bt_clear():
 
 def bt_equal():
     global expression
-    result = str(eval(expression))  # This function is used to evaluates the string expression directly
+    result = str(eval(expression))
     input_text.set(result)
     expression = ""
 
